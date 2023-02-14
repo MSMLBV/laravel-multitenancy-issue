@@ -38,6 +38,8 @@ class Kernel extends HttpKernel
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
             \App\Http\Middleware\HandleInertiaRequests::class,
             \Illuminate\Http\Middleware\AddLinkHeadersForPreloadedAssets::class,
+            \Spatie\Multitenancy\Http\Middleware\NeedsTenant::class,
+            \Spatie\Multitenancy\Http\Middleware\EnsureValidTenantSession::class,
         ],
 
         'api' => [

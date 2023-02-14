@@ -93,6 +93,21 @@ return [
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
 
+        'tenant' => [
+            'driver'   => 'mysql',
+            'database' => null,
+            'host'     => '127.0.0.1',
+            'username' => 'root',
+            'password' => '',
+        ],
+
+        'landlord' => [
+            'driver'   => 'mysql',
+            'database' => env('DB_LANDLORD_DATABASE', 'spatie-mt-issue-landlord'),
+            'host'     => '127.0.0.1',
+            'username' => 'root',
+            'password' => '',
+        ],
     ],
 
     /*
